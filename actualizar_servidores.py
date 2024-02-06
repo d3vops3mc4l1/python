@@ -26,7 +26,7 @@ def actualizar_servidor(ip, usuario, clave_privada):
 
 # Llamada a la función para cada servidor
 servers = [
-    {'ip': '54.166.62.104', 'usuario': 'ubuntu', 'clave_privada': '/home/operador-noc/claveadonde.pem'},
+    {'ip': '54.166.62.104', 'usuario': 'ubuntu', 'clave_privada': '/var/lib/jenkins/workspace/python-server-aws/claveadonde.pem'},
     # Agrega aquí la información de tus otros servidores
 ]
 

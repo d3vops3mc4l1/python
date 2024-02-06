@@ -13,7 +13,7 @@ def actualizar_servidor(ip, usuario, clave_privada):
     comandos = [
         'df -h',
         'ls -la  /var/www/',
-        'touch /home/ubuntu/emcalindex.html'
+        'touch /home/ubuntu/emcalindexfeb06.html'
         # Agrega aquí los comandos específicos de actualización que necesites
     ]
 

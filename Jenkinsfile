@@ -8,7 +8,7 @@ pipeline {
   }
     stage ('hello'){
     steps {
-      sh 'python actualizar_servidores.py'
+      sh 'python3 actualizar_servidores.py'
      }
     }
   }		

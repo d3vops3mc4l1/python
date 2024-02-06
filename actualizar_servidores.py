@@ -1,3 +1,5 @@
+# by pamartin FEB-06-2024
+# Este Script es para automatizar tareas de revision de servidores del datacenter linux.
 # actualizar_servidores.py
 import paramiko
 
@@ -9,8 +11,9 @@ def actualizar_servidor(ip, usuario, clave_privada):
 
     # Ejecutar comandos de actualización
     comandos = [
-        'sudo apt-get update',
-        'sudo apt-get upgrade -y'
+        'df -h',
+        'ls -la  /var/www/',
+        'touch /home/ubuntu/emcalindex.html'
         # Agrega aquí los comandos específicos de actualización que necesites
     ]
 
@@ -23,7 +26,7 @@ def actualizar_servidor(ip, usuario, clave_privada):
 
 # Llamada a la función para cada servidor
 servers = [
-    {'ip': '192.168.1.1', 'usuario': 'tu-usuario', 'clave_privada': 'ruta/a/tu/clave_privada.pem'},
+    {'ip': '54.166.62.104', 'usuario': 'ubuntu', 'clave_privada': '/home/operador-noc/claveadonde.pem'},
     # Agrega aquí la información de tus otros servidores
 ]
 
